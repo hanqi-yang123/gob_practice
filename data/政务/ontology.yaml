@@ -7,7 +7,7 @@ ontology:
   sources:
     - GOB 存储与检索方案/CO存储规范.md
   created_at: '2026-11-16T00:00:00+08:00'
-  version: 0.1.0
+  version: 0.1.1
   imports:
     - id: ontology_9981bf02c2fc
       version: ">=0.1.0,<1.0.0"
