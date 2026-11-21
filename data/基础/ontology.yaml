@@ -8,4 +8,6 @@ ontology:
     - GOB 存储与检索方案/CO存储规范.md
   created_at: '2026-11-16T00:00:00+08:00'
   version: 0.1.0
-  imports: []
+  imports: 
+    - id: ontology_bd0795d340d5
+      version: ">=0.1.0,<1.0.0"
