@@ -184,9 +184,7 @@ def test_import_cycle(data_dir: Path) -> None:
     """块之间相互依赖应报 import_cycle。"""
     path = data_dir / "base" / "ontology.yaml"
     doc = read_yaml(path)
-    doc["ontology"]["imports"] = [
-        {"id": "ontology_000000000002", "version": ">=0.1.0,<2.0.0"}
-    ]
+    doc["ontology"]["imports"] = [{"id": "ontology_000000000002", "version": ">=0.1.0,<2.0.0"}]
     write_yaml(path, doc)
     code, out = check(data_dir)
     assert code == 1
