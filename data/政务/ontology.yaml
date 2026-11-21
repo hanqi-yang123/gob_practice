@@ -10,4 +10,4 @@ ontology:
   version: 0.1.0
   imports:
     - id: ontology_9981bf02c2fc
-      version: ">=0.1.0,<1.0.0"
+      version: ">=9.0.0,<1.0.0"
