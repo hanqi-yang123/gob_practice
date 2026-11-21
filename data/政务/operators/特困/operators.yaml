@@ -1,0 +1,73 @@
+operators:
+  - id: operator_d678d7c417e2
+    canonical_name: 人_是否符合特困人员认定条件
+    input_concepts:
+      - concept_3dbb2438c9f6
+    output_concept: concept_ce3279319431
+    description: 判定是否同时满足特困人员认定条件。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第6行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_5c8440b55830
+    canonical_name: 人_是否有劳动能力
+    input_concepts:
+      - concept_3dbb2438c9f6
+    output_concept: concept_ce3279319431
+    description: 判定是否具备劳动能力。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第6行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_baf64f91cac7
+    canonical_name: 人_是否有生活来源
+    input_concepts:
+      - concept_3dbb2438c9f6
+    output_concept: concept_ce3279319431
+    description: 判定是否有生活来源。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第6行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_9b00bfa5b727
+    canonical_name: 人_是否无法定赡养抚养扶养义务人
+    input_concepts:
+      - concept_3dbb2438c9f6
+    output_concept: concept_ce3279319431
+    description: 判定是否无法定赡养、抚养、扶养义务人。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第6行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_07935d35ec81
+    canonical_name: 人_法定义务人_是否无履行义务能力
+    input_concepts:
+      - concept_3dbb2438c9f6
+    output_concept: concept_ce3279319431
+    description: 判定法定义务人是否无履行义务能力。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第6行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_123d3335d19b
+    canonical_name: 人_是否应纳入特困人员救助供养范围
+    input_concepts:
+      - concept_3dbb2438c9f6
+    output_concept: concept_ce3279319431
+    description: 判定是否应纳入特困人员救助供养范围。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第6行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false

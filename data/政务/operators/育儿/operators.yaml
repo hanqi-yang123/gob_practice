@@ -1,0 +1,25 @@
+operators:
+  - id: operator_08154e8c0200
+    canonical_name: 部门_部门级别
+    input_concepts:
+      - concept_4036f553114c
+    output_concept: concept_475dabf59043
+    description: 取部门所处的行政层级。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_2915f341fb7b
+    canonical_name: 系统_建立部门
+    input_concepts:
+      - concept_f78d6b6109c0
+    output_concept: concept_4036f553114c
+    description: 取系统的建立部门。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第20行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false

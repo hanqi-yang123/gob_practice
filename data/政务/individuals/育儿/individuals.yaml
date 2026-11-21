@@ -1,0 +1,103 @@
+individuals:
+  - id: individual_10652d510b1b
+    canonical_name: 中共中央办公厅
+    concept: concept_8664adce6f44
+    description: 机构的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_596b9b2f3889
+    canonical_name: 国务院办公厅
+    concept: concept_8664adce6f44
+    description: 机构的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_6627c4eefc02
+    canonical_name: 育儿补贴制度实施方案
+    concept: concept_0c47d9d4fe9d
+    description: 文章的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第2行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_a56e37d87ca9
+    canonical_name: 本规范
+    concept: concept_0c47d9d4fe9d
+    description: 文章的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第2行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第33行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_8cec1edfbce3
+    canonical_name: 制定政策措施
+    concept: concept_700adb2d6628
+    description: 工作的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_dbb309184f1b
+    canonical_name: __省级
+    concept: concept_475dabf59043
+    description: 部门级别的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_1f0dc4529c40
+    canonical_name: 负责育儿补贴制度的组织实施
+    concept: concept_700adb2d6628
+    description: 工作的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_2008bc9149bf
+    canonical_name: 育儿补贴制度
+    concept: concept_ba579afcfbcb
+    description: 制度的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_15cffd238e0f
+    canonical_name: 国家卫生健康委
+    concept: concept_4036f553114c
+    description: 部门的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第20行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第33行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_d037b399c5ca
+    canonical_name: 育儿补贴信息管理系统
+    concept: concept_f78d6b6109c0
+    description: 系统的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第20行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_fd6499eaf7e2
+    canonical_name: 财政部
+    concept: concept_4036f553114c
+    description: 部门的实例。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第33行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
