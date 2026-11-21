@@ -1,7 +1,7 @@
 concepts:
   - id: concept_798a3d7f4b92
     canonical_name: 卫生健康部门
-    description: 承担卫生健康职能的部门。
+    description: 负责卫生健康工作的部门。
     parents:
       - concept_4036f553114c
     sources:
