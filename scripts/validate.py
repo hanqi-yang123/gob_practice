@@ -73,9 +73,7 @@ def _construct_mapping(loader: StrictLoader, node, deep: bool = False):
     return yaml.SafeLoader.construct_mapping(loader, node, deep=deep)
 
 
-StrictLoader.add_constructor(
-    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_mapping
-)
+StrictLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_mapping)
 
 
 class Block:
@@ -116,8 +114,7 @@ class Report:
 def load_schemas() -> dict[str, dict]:
     """读取全部 schema 文件。"""
     return {
-        p.name: json.loads(p.read_text(encoding="utf-8"))
-        for p in SCHEMA_DIR.glob("*.schema.json")
+        p.name: json.loads(p.read_text(encoding="utf-8")) for p in SCHEMA_DIR.glob("*.schema.json")
     }
 
 
@@ -128,9 +125,7 @@ def build_validators() -> dict[str, Draft7Validator]:
         (schema["$id"], Resource.from_contents(schema)) for schema in schemas.values()
     )
     return {
-        section: Draft7Validator(
-            schemas[name], registry=registry, format_checker=FormatChecker()
-        )
+        section: Draft7Validator(schemas[name], registry=registry, format_checker=FormatChecker())
         for section, name in SECTION_SCHEMA.items()
     }
 
@@ -207,9 +202,7 @@ def parse_yaml(path: Path, rel: str, report: Report):
 def add_schema_errors(rel, section, items, report, validator) -> None:
     """按记录序号归组输出 schema 错误。"""
     doc = {section: items[0]} if section == "ontology" else {section: items}
-    errors = sorted(
-        validator.iter_errors(doc), key=lambda e: [str(p) for p in e.absolute_path]
-    )
+    errors = sorted(validator.iter_errors(doc), key=lambda e: [str(p) for p in e.absolute_path])
     for err in errors:
         parts = list(err.absolute_path)
         if section == "ontology":
@@ -238,9 +231,7 @@ def validate_document(rel, path, doc, validators, report) -> list[tuple[int | No
     if stem == "ontology":
         extra = [key for key in doc if key != "ontology"]
         if extra or not isinstance(doc.get("ontology"), dict):
-            report.add(
-                rel, None, "-", "<root>", "misplacement", "该文件只能含 ontology 记录"
-            )
+            report.add(rel, None, "-", "<root>", "misplacement", "该文件只能含 ontology 记录")
             return []
         add_schema_errors(rel, "ontology", [doc["ontology"]], report, validators["ontology"])
         return [(None, doc["ontology"])]
@@ -308,9 +299,7 @@ def load_objects(data_root, blocks, validators, report) -> list[dict]:
                     "对象不在任何带 ontology.yaml 的块内",
                 )
                 continue
-            records.append(
-                {"rel": rel, "index": index, "record": record, "block": block}
-            )
+            records.append({"rel": rel, "index": index, "record": record, "block": block})
     return records
 
 
@@ -373,7 +362,9 @@ def check_refs(index, by_id, report) -> None:
                         continue
                     path = f"{fld}[{pos}]" if is_list else fld
                     if ref == oid:
-                        report.add(item["rel"], item["index"], oid, path, "self_ref", "不能引用自身")
+                        report.add(
+                            item["rel"], item["index"], oid, path, "self_ref", "不能引用自身"
+                        )
                         continue
                     found = index.get(ref)
                     if not found:
@@ -536,7 +527,9 @@ def git_checks(data_root, blocks, index, base, report) -> None:
         return
 
     changed = set(
-        run_git(["-c", "core.quotepath=false", "diff", "--name-only", base, "--", data_rel]).splitlines()
+        run_git(
+            ["-c", "core.quotepath=false", "diff", "--name-only", base, "--", data_rel]
+        ).splitlines()
     )
     base_files = [
         line
