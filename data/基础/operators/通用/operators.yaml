@@ -1,0 +1,56 @@
+operators:
+  - id: operator_dbc7eb8f1401
+    canonical_name: 名字
+    input_concepts:
+      - concept_0ece13ca434d
+    output_concept: concept_95fca043a35e
+    description: 取对象的名称。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+      - '政务 特困 原文 #8（202610）.xlsx#第4行'
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第2行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第5行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第20行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第33行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: true
+  - id: operator_76ac1a3d792c
+    canonical_name: get_year
+    input_concepts:
+      - concept_9e66fbe26f35
+    output_concept: concept_9326b0e0b963
+    description: 取日期的年份。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: true
+  - id: operator_160a3c9c2d1b
+    canonical_name: get_month
+    input_concepts:
+      - concept_9e66fbe26f35
+    output_concept: concept_9326b0e0b963
+    description: 取日期的月份。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: true
+  - id: operator_cdad9d2af957
+    canonical_name: get_day
+    input_concepts:
+      - concept_9e66fbe26f35
+    output_concept: concept_9326b0e0b963
+    description: 取日期的日。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: true

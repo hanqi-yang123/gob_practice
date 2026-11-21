@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://gob.local/schema/operator.schema.json",
+  "title": "算子分片文件",
+  "description": "约束 operators.yaml；operator 定义只在此处声明一次。",
+  "type": "object",
+  "required": ["operators"],
+  "additionalProperties": false,
+  "properties": {
+    "operators": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/operator"
+      }
+    }
+  },
+  "definitions": {
+    "operator": {
+      "type": "object",
+      "required": [
+        "id",
+        "canonical_name",
+        "input_concepts",
+        "output_concept",
+        "description",
+        "sources",
+        "created_at"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^operator_[0-9a-f]{12}$"
+        },
+        "canonical_name": {
+          "$ref": "common.schema.json#/definitions/name"
+        },
+        "input_concepts": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "common.schema.json#/definitions/concept_ref"
+          },
+          "description": "有序输入概念 ID 列表，可以为空"
+        },
+        "output_concept": {
+          "$ref": "common.schema.json#/definitions/concept_ref"
+        },
+        "description": {
+          "$ref": "common.schema.json#/definitions/description"
+        },
+        "sources": {
+          "$ref": "common.schema.json#/definitions/sources"
+        },
+        "created_at": {
+          "$ref": "common.schema.json#/definitions/created_at"
+        },
+        "supply": {
+          "$ref": "supply.schema.json"
+        }
+      }
+    }
+  }
+}

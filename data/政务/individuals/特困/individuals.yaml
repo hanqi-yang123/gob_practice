@@ -1,0 +1,181 @@
+individuals:
+  - id: individual_b0d987a02663
+    canonical_name: 特困人员认定办法
+    concept: concept_0c47d9d4fe9d
+    description: 文章的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_f27bed4efb46
+    canonical_name: 民政局
+    concept: concept_8664adce6f44
+    description: 机构的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_2baa9f63e3ac
+    canonical_name: 民政
+    concept: concept_d6cb442b7433
+    description: 文章主题分类的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_d8376332518e
+    canonical_name: 扶贫
+    concept: concept_d6cb442b7433
+    description: 文章主题分类的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_d9314f19c638
+    canonical_name: 救灾
+    concept: concept_d6cb442b7433
+    description: 文章主题分类的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_6220f891e223
+    canonical_name: 其他
+    concept: concept_d18990ca1de9
+    description: 文章体裁分类的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_bfc078f46315
+    canonical_name: 主动公开
+    concept: concept_37f94b385a32
+    description: 文章公开类型的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_d8c26fa67b2f
+    canonical_name: 社会救助暂行办法
+    concept: concept_0c47d9d4fe9d
+    description: 文章的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第3行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_2531691f71da
+    canonical_name: 国务院关于进一步健全特困人员救助供养制度的意见
+    concept: concept_0c47d9d4fe9d
+    description: 文章的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第3行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_14c96e3c8ba1
+    canonical_name: 中共中央办公厅国务院办公厅印发关于改革完善社会救助制度的意见的通知
+    concept: concept_0c47d9d4fe9d
+    description: 文章的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第3行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_5f2f1722079c
+    canonical_name: 国家相关规定
+    concept: concept_e2ec3caa27b5
+    description: 规定的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第3行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_423d1f1a5df6
+    canonical_name: 特困人员认定工作
+    concept: concept_700adb2d6628
+    description: 工作的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_d9d2208e1547
+    canonical_name: 应救尽救应养尽养
+    concept: concept_cb7ca7361066
+    description: 工作原则的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_fd36640d1938
+    canonical_name: 属地管理分级负责
+    concept: concept_cb7ca7361066
+    description: 工作原则的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_6d500029ad7a
+    canonical_name: 严格规范高效便民
+    concept: concept_cb7ca7361066
+    description: 工作原则的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_9c06d95ddb34
+    canonical_name: 公开公平公正
+    concept: concept_cb7ca7361066
+    description: 工作原则的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_a5a1e32ffe4a
+    canonical_name: 统筹做好本行政区域内特困人员认定及救助供养工作
+    concept: concept_700adb2d6628
+    description: 工作的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_86e280a37641
+    canonical_name: 负责特困人员认定的审核确认工作
+    concept: concept_700adb2d6628
+    description: 工作的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_4ee87081a1b3
+    canonical_name: 负责特困人员认定的受理初审工作
+    concept: concept_700adb2d6628
+    description: 工作的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: individual_6d074dc0257e
+    canonical_name: 协助做好相关工作
+    concept: concept_700adb2d6628
+    description: 工作的实例。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children

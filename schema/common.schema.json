@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://gob.local/schema/common.schema.json",
+  "title": "共用定义",
+  "description": "本体、概念、算子、实例与 KE 共用的字段约束：id、名称、描述、来源、创建时间、版本。",
+  "definitions": {
+    "id": {
+      "type": "string",
+      "pattern": "^(ontology|concept|operator|individual|ke)_[0-9a-f]{12}$",
+      "description": "对象类型前缀加 12 位小写十六进制哈希"
+    },
+    "concept_ref": {
+      "type": "string",
+      "pattern": "^concept_[0-9a-f]{12}$"
+    },
+    "operator_ref": {
+      "type": "string",
+      "pattern": "^operator_[0-9a-f]{12}$"
+    },
+    "individual_ref": {
+      "type": "string",
+      "pattern": "^individual_[0-9a-f]{12}$"
+    },
+    "ontology_ref": {
+      "type": "string",
+      "pattern": "^ontology_[0-9a-f]{12}$"
+    },
+    "ke_ref": {
+      "type": "string",
+      "pattern": "^ke_[0-9a-f]{12}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S",
+      "description": "规范化名称，不得为空或全为空白字符"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S",
+      "description": "对象含义的明确描述，不得为空或全为空白字符"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "description": "相对于共享资源根目录的公共路径，可带 # 片段，同一记录内不得重复"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$",
+      "description": "RFC 3339 时间，必须带时区"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?$",
+      "description": "语义化版本号"
+    }
+  }
+}

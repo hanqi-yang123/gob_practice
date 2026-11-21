@@ -1,0 +1,210 @@
+operators:
+  - id: operator_7f7436699f6c
+    canonical_name: 文章_标题
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_95fca043a35e
+    description: 取政策文本的标题。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+      - '政务 特困 原文 #8（202610）.xlsx#第3行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第2行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: true
+  - id: operator_bedfa8b517a9
+    canonical_name: 文章_发布机构
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_8664adce6f44
+    description: 取政策文本的发布机构。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_3e97ad83c34a
+    canonical_name: 文章_发布日期
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_9e66fbe26f35
+    description: 取政策文本的发布日期。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_7a030dbab850
+    canonical_name: 文章_成文日期
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_9e66fbe26f35
+    description: 取政策文本的成文日期。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_4f4acee90ccf
+    canonical_name: 文章_文章主题分类
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_d6cb442b7433
+    description: 取政策文本的主题分类。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_a12d47486495
+    canonical_name: 文章_文章体裁分类
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_d18990ca1de9
+    description: 取政策文本的体裁分类。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_d9f4a1934efd
+    canonical_name: 文章_文章公开类型
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_37f94b385a32
+    description: 取政策文本的公开类型。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_9cfe9870f2a6
+    canonical_name: 文章_印发机构
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_8664adce6f44
+    description: 取政策文本的印发机构。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_43d940b57107
+    canonical_name: 文章_制定依据
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_0c47d9d4fe9d
+    description: 取政策文本的制定依据。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_b8372b1588ce
+    canonical_name: 文章_依据
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_0c47d9d4fe9d
+    description: 取政策文本所依据的文件与条款。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第3行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_45e180f7caa4
+    canonical_name: 文章_解释部门
+    input_concepts:
+      - concept_0c47d9d4fe9d
+    output_concept: concept_4036f553114c
+    description: 取负责解释政策文本的部门。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第33行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_07fb94ccc093
+    canonical_name: 部门_相关工作
+    input_concepts:
+      - concept_4036f553114c
+    output_concept: concept_700adb2d6628
+    description: 取部门承担的工作。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_bc8e4af23b6d
+    canonical_name: 政府_相关工作
+    input_concepts:
+      - concept_29b546f9ef13
+    output_concept: concept_700adb2d6628
+    description: 取政府承担的工作。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_2aeae89b1df1
+    canonical_name: 组织_相关工作
+    input_concepts:
+      - concept_9ac33e06b359
+    output_concept: concept_700adb2d6628
+    description: 取组织承担的工作。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_767f4cca70c2
+    canonical_name: 工作_依据
+    input_concepts:
+      - concept_700adb2d6628
+    output_concept: concept_0c47d9d4fe9d
+    description: 取工作开展所依据的政策文本。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_0c808e1b7f36
+    canonical_name: 工作_对象
+    input_concepts:
+      - concept_700adb2d6628
+    output_concept: concept_ba579afcfbcb
+    description: 取工作的作用对象。
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false
+  - id: operator_a2504a33f3c1
+    canonical_name: 工作_应遵循_原则
+    input_concepts:
+      - concept_700adb2d6628
+    output_concept: concept_cb7ca7361066
+    description: 取工作应遵循的原则。
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+      is_pure: false

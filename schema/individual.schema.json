@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://gob.local/schema/individual.schema.json",
+  "title": "实例分片文件",
+  "description": "约束 individuals.yaml；individual 定义只在此处声明一次。",
+  "type": "object",
+  "required": ["individuals"],
+  "additionalProperties": false,
+  "properties": {
+    "individuals": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/individual"
+      }
+    }
+  },
+  "definitions": {
+    "individual": {
+      "type": "object",
+      "required": ["id", "canonical_name", "concept", "description", "sources", "created_at"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^individual_[0-9a-f]{12}$"
+        },
+        "canonical_name": {
+          "$ref": "common.schema.json#/definitions/name"
+        },
+        "concept": {
+          "$ref": "common.schema.json#/definitions/concept_ref"
+        },
+        "description": {
+          "$ref": "common.schema.json#/definitions/description"
+        },
+        "sources": {
+          "$ref": "common.schema.json#/definitions/sources"
+        },
+        "created_at": {
+          "$ref": "common.schema.json#/definitions/created_at"
+        },
+        "supply": {
+          "$ref": "supply.schema.json"
+        }
+      }
+    }
+  }
+}

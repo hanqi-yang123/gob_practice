@@ -1,0 +1,71 @@
+concepts:
+  - id: concept_6a164522cb90
+    canonical_name: 老年人
+    description: 达到法定年龄标准的人。
+    parents:
+      - concept_3dbb2438c9f6
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第6行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_099c661619af
+    canonical_name: 残疾人
+    description: 存在身心功能障碍的人。
+    parents:
+      - concept_3dbb2438c9f6
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第6行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_19ba6fbd7890
+    canonical_name: 未成年人
+    description: 未满法定成年年龄的人。
+    parents:
+      - concept_3dbb2438c9f6
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第6行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_8417335c5567
+    canonical_name: 县级以上地方人民政府民政部门
+    description: 县级以上地方政府的民政主管部门。
+    parents:
+      - concept_4036f553114c
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_b398fe60a0a2
+    canonical_name: 县级人民政府民政部门
+    description: 县级政府的民政主管部门。
+    parents:
+      - concept_4036f553114c
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_5b2fce2764f4
+    canonical_name: 乡镇人民政府街道办事处
+    description: 乡镇政府与街道办事处的合称。
+    parents:
+      - concept_29b546f9ef13
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_6f01ce5368a7
+    canonical_name: 村居民委员会
+    description: 基层群众性自治组织。
+    parents:
+      - concept_9ac33e06b359
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children

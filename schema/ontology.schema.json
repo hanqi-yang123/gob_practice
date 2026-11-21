@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://gob.local/schema/ontology.schema.json",
+  "title": "本体元数据文件",
+  "description": "约束 ontology.yaml：整个文件只含一条 ontology 记录。",
+  "type": "object",
+  "required": ["ontology"],
+  "additionalProperties": false,
+  "properties": {
+    "ontology": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "canonical_name",
+        "path_alias",
+        "description",
+        "sources",
+        "created_at",
+        "version",
+        "imports"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^ontology_[0-9a-f]{12}$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["container", "leaf"],
+          "description": "容器层可把对象共享给子孙层，叶子层只承载本文档抽取的对象"
+        },
+        "canonical_name": {
+          "$ref": "common.schema.json#/definitions/name"
+        },
+        "path_alias": {
+          "type": "string",
+          "pattern": "^[\\u4e00-\\u9fa5A-Za-z0-9_-]+(\\.[\\u4e00-\\u9fa5A-Za-z0-9_-]+)*$",
+          "description": "点分作用域路径，逐段与目录名一致，用于定位与展示"
+        },
+        "description": {
+          "$ref": "common.schema.json#/definitions/description"
+        },
+        "sources": {
+          "$ref": "common.schema.json#/definitions/sources"
+        },
+        "created_at": {
+          "$ref": "common.schema.json#/definitions/created_at"
+        },
+        "version": {
+          "$ref": "common.schema.json#/definitions/version"
+        },
+        "imports": {
+          "type": "array",
+          "description": "被依赖块的 id 与允许的版本范围（PEP 440），无依赖时为空数组",
+          "items": {
+            "type": "object",
+            "required": ["id", "version"],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^ontology_[0-9a-f]{12}$"
+              },
+              "version": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

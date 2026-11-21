@@ -1,0 +1,78 @@
+concepts:
+  - id: concept_0ece13ca434d
+    canonical_name: Concept
+    description: 任意概念的泛称，用于泛化算子。
+    parents: []
+    sources:
+      - GOB 存储与检索方案/CO存储规范.md
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_95fca043a35e
+    canonical_name: String
+    description: 字符串类型。
+    parents: []
+    sources:
+      - GOB 存储与检索方案/CO存储规范.md
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_9326b0e0b963
+    canonical_name: Number
+    description: 数值类型。
+    parents: []
+    sources:
+      - GOB 存储与检索方案/CO存储规范.md
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_ce3279319431
+    canonical_name: Bool
+    description: 布尔类型。
+    parents: []
+    sources:
+      - GOB 存储与检索方案/CO存储规范.md
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_9e66fbe26f35
+    canonical_name: Date
+    description: 日期类型。
+    parents: []
+    sources:
+      - gold_clean.xlsx#Finance!Fin-001
+      - gold_clean.xlsx#Finance!Fin-002
+      - gold_clean.xlsx#Finance!Fin-004
+      - gold_clean.xlsx#Finance!Fin-008
+      - gold_clean.xlsx#Finance!Fin-010
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_3dbb2438c9f6
+    canonical_name: 人
+    description: 自然人。
+    parents: []
+    sources:
+      - gold_clean.xlsx#Finance!Fin-001
+      - gold_clean.xlsx#Finance!Fin-002
+      - gold_clean.xlsx#Finance!Fin-010
+      - '政务 特困 原文 #8（202610）.xlsx#第6行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_8664adce6f44
+    canonical_name: 机构
+    description: 承担特定职能的组织。
+    parents: []
+    sources:
+      - gold_clean.xlsx#Finance!Fin-001
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第2行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第5行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第20行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第33行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children

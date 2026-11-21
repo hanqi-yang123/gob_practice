@@ -1,0 +1,130 @@
+concepts:
+  - id: concept_0c47d9d4fe9d
+    canonical_name: 文章
+    description: 具有标题与发布信息的政策文本。
+    parents: []
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+      - '政务 特困 原文 #8（202610）.xlsx#第3行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第2行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第33行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_d6cb442b7433
+    canonical_name: 文章主题分类
+    description: 政策文本的主题标引。
+    parents: []
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_d18990ca1de9
+    canonical_name: 文章体裁分类
+    description: 政策文本的体裁标引。
+    parents: []
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_37f94b385a32
+    canonical_name: 文章公开类型
+    description: 政策文本的公开属性。
+    parents: []
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第2行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_e2ec3caa27b5
+    canonical_name: 规定
+    description: 具有约束力的规范性文件条款。
+    parents: []
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第3行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_700adb2d6628
+    canonical_name: 工作
+    description: 由特定主体承担、指向特定对象的事项。
+    parents: []
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第4行'
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_cb7ca7361066
+    canonical_name: 工作原则
+    description: 工作应遵循的基本准则。
+    parents: []
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_4036f553114c
+    canonical_name: 部门
+    description: 承担行政管理职能的机构。
+    parents:
+      - concept_8664adce6f44
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第5行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第20行'
+      - '政务 育儿 原文 #4（202610）.xlsx#第33行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_29b546f9ef13
+    canonical_name: 政府
+    description: 行使行政权力的国家机关。
+    parents: []
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_9ac33e06b359
+    canonical_name: 组织
+    description: 以特定目的组成的集体。
+    parents: []
+    sources:
+      - '政务 特困 原文 #8（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_ba579afcfbcb
+    canonical_name: 制度
+    description: 成体系的规则安排。
+    parents: []
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第5行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_f78d6b6109c0
+    canonical_name: 系统
+    description: 承载业务运转的信息系统。
+    parents: []
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第20行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
+  - id: concept_475dabf59043
+    canonical_name: 部门级别
+    description: 部门所处的行政层级。
+    parents: []
+    sources:
+      - '政务 育儿 原文 #4（202610）.xlsx#第4行'
+    created_at: '2026-11-16T00:00:00+08:00'
+    supply:
+      need: all-children
